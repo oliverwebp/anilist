@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>malview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="main"></div>
+  <div id="oauth"></div>
+
+  <template id="login">
+    <h1>Welcome malview</h1>
+    <button id="login-button" data-bind-onclick="loginWithMALClick();"> Log in with MAL </button>
+  </template>
+
+  <template id="logged-in-template">
+    <h1>Logged in as </h1>
+    
+
+    <button id="refresh-token-button" data-bind-onclick="refreshTokenClick();">Refresh Token</button>
+    <button id="logout-button" data-bind-onclick="logoutClick();">Log out</button>
+  </template>
+
+  <template id="oauth-template">
+    <h2>oAuth info</h2>
+    
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>
