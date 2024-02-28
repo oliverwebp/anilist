@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAL Viewer</title>
+  </head>
+  <body>
+    <div id="main">Hi</div>
+    <div id="oauth"></div>
+
+    <template id="login">
+      <h1>welcome to mal viewer</h1>
+      <button id="login-button" data-bind-onclick="loginWithMALClick();"> Log in with MAL</button>
+    </template>
+
+    <template id="logged-in-template">
+      <h1>Logged in!</h1>
+    </template>
+
+    <template id="oauth-template">
+      <h2>Access Token</h2>
+      <h1 data-bind="access_token"></h1>
+    </template>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
