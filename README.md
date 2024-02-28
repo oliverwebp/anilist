@@ -1,1 +1,1 @@
-
+Erm so MAL API which was what I was going to utilize actually doesn't allow for script API calls (js fetch) unless I run a proxy which would only be useful for local development. So this is effectively useless D;
